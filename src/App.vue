@@ -101,7 +101,7 @@ const onclick = () => {
         <h1 class="flex justify-center">
           亿生康医疗门诊部互联网医院
         </h1>
-        <img id="logo" src="src/assets/logo.png" class="w-28 h-28">
+        <img id="logo" src="/src/assets/logo.png" class="w-28 h-28">
         <h1 class="flex justify-center">
           处方笺
         </h1>
@@ -144,7 +144,7 @@ const onclick = () => {
           Rp
         </div>
         <div class="text-xs">
-          *此处方仅限于苏州市意涵药店有限公司使用
+          *此处方仅限于苏州市意涵医药商店有限公司使用
         </div>
       </div>
 
@@ -166,7 +166,7 @@ const onclick = () => {
 
       <div class="flex flex-wrap justify-between ml-10 mr-15 mr-10">
         <div>医&nbsp;&nbsp;师：</div>
-        <img id="sign" src="src/assets/sign.png" class="w-36 h-16">
+        <img id="sign" src="/src/assets/sign.png" class="w-36 h-16">
         <div class="mr-24">审核医师：</div>
       </div>
       <div class="flex flex-wrap justify-between ml-10 mr-15 mr-10">
