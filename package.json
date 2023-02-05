@@ -9,8 +9,6 @@
   },
   "dependencies": {
     "dom-to-image": "^2.6.0",
-    "html2canvas": "^1.4.1",
-    "puppeteer": "^19.6.3",
     "vue": "^3.2.45"
   },
   "devDependencies": {
