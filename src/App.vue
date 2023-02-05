@@ -10,6 +10,7 @@ let date = ref('2023-');
 let sick = ref('');
 let medicine = ref('苯磺酸左氨氯地平片 2.5mg*7片*2板');
 let count = ref(0);
+let method = ref('口服');
 let times = ref(0);
 let pills = ref(0);
 
@@ -76,6 +77,12 @@ const onclick = () => {
       <input
           class="rounded border border-gray-300 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
           v-model="count" type="number">
+    </div>
+    <div class="mb-2">
+      使用方式：
+      <input
+          class="rounded border border-gray-300 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
+          v-model="method" type="text">
     </div>
     <div class="mb-2">
       每日服用次数：
@@ -156,7 +163,7 @@ const onclick = () => {
 
       <!-- How to take -->
       <div class="flex flex-wrap justify-between ml-10 mr-15 mr-10">
-        <div>用法：口服 每次{{ pills }}片 每日{{ times }}次</div>
+        <div>用法：{{method}} <span v-if="pills > 0">每次{{ pills }}片</span> 每日{{ times }}次</div>
       </div>
 
       <!-- Empty -->
